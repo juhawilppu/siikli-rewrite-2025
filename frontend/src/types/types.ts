@@ -274,8 +274,7 @@ export type InvoiceRowDto = {
   totalWithTax: number
   totalWithoutTax: number
   tax: number
-} |
-{
+} | {
   usePrice0: false
   deliveryDate: Date
   orderNumber: number
