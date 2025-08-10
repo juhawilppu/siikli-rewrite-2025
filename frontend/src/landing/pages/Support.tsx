@@ -3,7 +3,7 @@ import { useTranslation } from '../../lib/translations'
 import Footer from '../components/Footer'
 import TopBar from '../components/TopBar'
 
-export default function ContactPage({ inApp = false }: { inApp?: boolean }) {
+export default function ContactPage() {
   const t = useTranslation()
 
   const scrollToTop = () => {
@@ -19,7 +19,7 @@ export default function ContactPage({ inApp = false }: { inApp?: boolean }) {
 
   return (
     <div className="flex min-h-screen flex-col">
-      {!inApp && <TopBar />}
+      <TopBar />
 
       <section className="w-full py-12 md:py-24 bg-white">
         <div className="container px-4 md:px-6">
@@ -49,7 +49,7 @@ export default function ContactPage({ inApp = false }: { inApp?: boolean }) {
         </div>
       </section>
 
-      {!inApp && <Footer />}
+      <Footer />
     </div>
   )
 }
